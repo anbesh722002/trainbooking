@@ -16,5 +16,6 @@ class Booking(Base):
     train_no = Column(Integer,ForeignKey("trains.train_no"))
     name = Column(String)
     coach = Column(String)
-    seat_no = Column(Integer)
+    seat_no = Column(Integer,nullable=True)
     status = Column(String)
+    waiting_no = Column(Integer, nullable=True)
